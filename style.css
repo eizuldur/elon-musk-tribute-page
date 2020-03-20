@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+#image{
+  width: 100%;
+  height: auto;
+  max-width: 625px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#tribute-info {
+  font-size: 18px;
+  font-style: oblique;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 1000px;
+  box-sizing: border-box;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5;
+
+}
+
+.timeline ul {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.content {
+  padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before {
+  content: '';
+  top: 24px;
+  right: -6px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(128, 0, 0, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.2);
+}
+
+.timeline ul li:nth-child(even):before {
+  content: '';
+  top: 24px;
+  left: -4px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(128, 0, 0, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.2);
+}
+
+.timeline ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: rgba(128, 0, 0, 1);
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.timeline ul li .time h4 {
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+  position: absolute;
+  top: 12px;
+  right: -80px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(128, 0, 0, 1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.3);
+}
+
+.timeline ul li:nth-child(even) .time {
+  position: absolute;
+  top: 12px;
+  left: -80px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(128, 0, 0, 1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.3);
+}
+
+a:hover {
+  font-size: 15px;
+  color: rgba(128, 0, 0, 1);
+}
